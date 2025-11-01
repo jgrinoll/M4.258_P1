@@ -3,17 +3,38 @@
  * Do not include SCSS code in this file.
  */
 
- /**
+/**
  * Import dependencies
  */
 @use "dependencies";
 
 /**
+* Import bases
+*/
+@use "base/base";
+
+/**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
+@use "layout/container";
 
- @use "layouts/home";
+/** 
+* Import modules
+*/
+@use "modules/logo";
+@use "modules/title";
+@use "modules/footer";
+
+/** 
+* Import states
+*/
+@use "state/state";
+
+/** 
+* Import modules
+*/
+@use "theme/theme";
 
 /**
  * Do NOT include anything else in this file!
