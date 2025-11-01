@@ -17,14 +17,16 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
-@use "layout/container";
+@use "layout/header";
+@use "layout/footer";
 
 /** 
 * Import modules
 */
 @use "modules/logo";
 @use "modules/title";
-@use "modules/footer";
+@use "modules/nav";
+@use "modules/card";
 
 /** 
 * Import states

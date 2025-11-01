@@ -1,0 +1,30 @@
+@use "../variables";
+@use "sass:color";
+
+.nav {
+  margin-right: auto;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+
+    li {
+      padding: 0.5rem 2rem;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: variables.$uoc-corporate;
+      }
+    }
+
+    li:hover {
+      background-color: color.scale(
+        variables.$uoc-masterbrand,
+        $lightness: 30%
+      );
+    }
+  }
+}
