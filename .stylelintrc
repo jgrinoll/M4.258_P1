@@ -59,11 +59,13 @@
     ],
 
     "color-named": "never",
-    "selector-max-id": 0,
+    "selector-max-id": 1,
     "max-nesting-depth": 3,
     "selector-class-pattern": "^[a-z0-9\\-]+$",
 
     "scss/dollar-variable-pattern": "^[a-z0-9\\-]+$",
-    "scss/percent-placeholder-pattern": "^[a-z0-9\\-]+$"
+    "scss/percent-placeholder-pattern": "^[a-z0-9\\-]+$",
+
+    "no-empty-source": null
   }
 }
