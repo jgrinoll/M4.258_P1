@@ -1,0 +1,78 @@
+@use "../variables";
+
+.image-card {
+  display: flex;
+  gap: 2rem;
+  max-width: 100%;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  text-align: left;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  .content {
+    width: 100%;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  picture {
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: variables.$mq-min-width) {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+
+    .content {
+      flex: none;
+      width: 100%;
+    }
+
+    picture img {
+      flex: none;
+      max-width: 100%;
+    }
+  }
+}
+
+.image-card-small {
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+
+  .content {
+    width: 15vw;
+
+    h1 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+  }
+
+  picture img {
+    max-width: 15vw;
+  }
+
+  @media (max-width: variables.$mq-min-width) {
+    max-width: 75vw;
+    .content {
+      width: 100%;
+    }
+
+    picture img {
+      max-width: 100%;
+    }
+  }
+}

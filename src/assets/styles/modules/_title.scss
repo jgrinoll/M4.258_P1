@@ -6,7 +6,7 @@
   font-weight: 700;
   color: variables.$uoc-corporate;
 
-  @media (min-width: variables.$mqMinWidth) {
+  @media (min-width: variables.$mq-min-width) {
     font-size: 36px;
   }
 }

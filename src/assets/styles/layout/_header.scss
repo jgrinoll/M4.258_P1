@@ -6,4 +6,9 @@
   align-items: center;
 
   background-color: variables.$uoc-masterbrand;
+
+  @media (max-width: variables.$mq-min-width) {
+    flex-direction: column;
+    text-align: center;
+  }
 }

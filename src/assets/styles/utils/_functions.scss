@@ -1,0 +1,8 @@
+@use "sass:color";
+// Ajusta la lluminositat d'un color segons un percentatge
+// @param {color} $base - El color base
+// @param {number} $amount - Percentatge de canvi de lluminositat (+/-)
+// @return {color}
+@function adjust-lightness($base, $amount) {
+  @return color.scale($base, $lightness: $amount);
+}

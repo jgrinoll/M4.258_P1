@@ -3,10 +3,12 @@
 .uoc-logo {
   display: flex;
   align-items: center;
-  max-width: 100px;
+  justify-content: center;
   height: auto;
+  max-width: 200px;
 
-  @media (min-width: variables.$mqMinWidth) {
+  @media (max-width: variables.$mq-min-width) {
+    width: 100%;
     max-width: none;
   }
 }

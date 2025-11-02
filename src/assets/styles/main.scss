@@ -19,6 +19,7 @@
  */
 @use "layout/header";
 @use "layout/footer";
+@use "layout/grid";
 
 /** 
 * Import modules
@@ -26,7 +27,7 @@
 @use "modules/logo";
 @use "modules/title";
 @use "modules/nav";
-@use "modules/card";
+@use "modules/image-card";
 
 /** 
 * Import states

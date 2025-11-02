@@ -1,8 +1,9 @@
 @use "../variables";
-@use "sass:color";
+@use "../utils/functions";
 
 .nav {
   margin-right: auto;
+  width: 100%;
 
   ul {
     list-style: none;
@@ -21,10 +22,17 @@
     }
 
     li:hover {
-      background-color: color.scale(
+      background-color: functions.adjust-lightness(
         variables.$uoc-masterbrand,
-        $lightness: 30%
+        30%
       );
+    }
+  }
+
+  @media (max-width: variables.$mq-min-width) {
+    ul {
+      flex-direction: column;
+      gap: 0;
     }
   }
 }
